@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@drawable/yodhim"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_title_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="News Title"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/txt_content_news"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pada praktikum pemrograman web, seringkali mahasiswa menghadapi berbagai permasalahan kompleks yang berkaitan dengan pengembangan aplikasi web. Salah satu permasalahan yang sering muncul adalah efisiensi dalam mengelola dan mengembangkan kode sumber, terutama ketika proyek menjadi semakin besar dan kompleks. Terkadang, tugas-tugas rutin seperti mengelola rute, interaksi dengan basis data, dan pengaturan sesi dapat menjadi rumit dan memakan banyak waktu. Laravel sebagai salah satu framework PHP yang paling popular, menawarkan solusi yang kuat untuk mengatasi permasalahan yang telah disebutkan sebelumnya. Framework ini didesain dengan sangat baik untuk memudahkan pengembang dalam membangun aplikasi web dengan cepat dan efisien. Dengan fitur-fitur seperti system routing yang kuat, ORM (Object-Relational Mapping) yang canggih, dan beragam alat bantu lainnya, Laravel dapat membantu menghemat waktu dan tenaga dalam pengembangan aplikkasi web yang berkualitas. Oleh karena itu, praktikum ini akan membahas mengapa Laravel menjadi pilihan yang baik untuk mengatasi permasalahan tersebut. Laravel adalah salah satu framework web yang paling diminati dan banyak digunakan dalam industry saat ini. Memahami Laravel akan meningkatkan keterampilan dan daya saing sebagai seorang pengembang web, seperti penggunaan MVC(Model-View-Controller) dan pengaturan proyek yang terstruktur. Hal ini akan memberikan landasan yang kuat untuk mahasiswa yang ingin melanjutkan karir dalam pengembangan web. Kami berharap bahwa mahasiswa yang mengikuti praktikum ini akan mendapatkan pemahaman yang baik tentang Laravel dan bagaimana menggunakannya dalam pengembangan aplikasi web. Kami juga berharap bahwa mahasiswa akan menghargai pentingnya memiliki kemampuan untuk mengatasi permasalahan dalam pengembangan web secara efisien. Selain itu, kami berharap mahasiswa dapat mengaplikasikan pengetahuan yang diperoleh selama praktikum ini dalam proyek-proyek masa depan mereka dan secara keseluruhan, meningkatkan kualitas dan produktivitas dalam pengembangan aplikasi web.  Pada praktikum pemrograman web, seringkali mahasiswa menghadapi berbagai permasalahan kompleks yang berkaitan dengan pengembangan aplikasi web. Salah satu permasalahan yang sering muncul adalah efisiensi dalam mengelola dan mengembangkan kode sumber, terutama ketika proyek menjadi semakin besar dan kompleks. Terkadang, tugas-tugas rutin seperti mengelola rute, interaksi dengan basis data, dan pengaturan sesi dapat menjadi rumit dan memakan banyak waktu. Laravel sebagai salah satu framework PHP yang paling popular, menawarkan solusi yang kuat untuk mengatasi permasalahan yang telah disebutkan sebelumnya. Framework ini didesain dengan sangat baik untuk memudahkan pengembang dalam membangun aplikasi web dengan cepat dan efisien. Dengan fitur-fitur seperti system routing yang kuat, ORM (Object-Relational Mapping) yang canggih, dan beragam alat bantu lainnya, Laravel dapat membantu menghemat waktu dan tenaga dalam pengembangan aplikkasi web yang berkualitas. Oleh karena itu, praktikum ini akan membahas mengapa Laravel menjadi pilihan yang baik untuk mengatasi permasalahan tersebut. Laravel adalah salah satu framework web yang paling diminati dan banyak digunakan dalam industry saat ini. Memahami Laravel akan meningkatkan keterampilan dan daya saing sebagai seorang pengembang web, seperti penggunaan MVC(Model-View-Controller) dan pengaturan proyek yang terstruktur. Hal ini akan memberikan landasan yang kuat untuk mahasiswa yang ingin melanjutkan karir dalam pengembangan web. Kami berharap bahwa mahasiswa yang mengikuti praktikum ini akan mendapatkan pemahaman yang baik tentang Laravel dan bagaimana menggunakannya dalam pengembangan aplikasi web. Kami juga berharap bahwa mahasiswa akan menghargai pentingnya memiliki kemampuan untuk mengatasi permasalahan dalam pengembangan web secara efisien. Selain itu, kami berharap mahasiswa dapat mengaplikasikan pengetahuan yang diperoleh selama praktikum ini dalam proyek-proyek masa depan mereka dan secara keseluruhan, meningkatkan kualitas dan produktivitas dalam pengembangan aplikasi web."
+                android:textSize="14sp"
+                android:justificationMode="inter_word"
+                app:layout_constraintEnd_toEndOf="@+id/txt_title_news"
+                app:layout_constraintStart_toStartOf="@+id/txt_title_news"
+                app:layout_constraintTop_toBottomOf="@+id/txt_title_news" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/guideline"
+                app:layout_constraintGuide_percent="0.5">
+            </androidx.constraintlayout.widget.Guideline>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="START"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_content_news" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="FINISH"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/txt_content_news" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
